@@ -1,30 +1,7 @@
 
 <!DOCTYPE html><html lang="en">
 <head>
-<script type="title-text/javascript">
-    var msg  = document.title ="vaporware.cpp    ";
-    var speed = 0.1;
-    var endChar = " ";
-    var pos = 0;
-    
-    function moveTitle()
-    {
-         var ml = msg.length;
-            
-        title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
-      document.title = title;
-        
-      pos++;
-      if (pos > ml) pos=0;
-      window.setTimeout("moveTitle()",speed);
-    }
-
-    moveTitle();
-</script>
-
-
-
-<meta property="og:title" content="">
+<meta property="og:title" content="goshi">
 <meta property="og:type" content="website">
 <link rel=stylesheet href="css/css.css">
 <link rel="shortcut icon" type="image/x-icon" href="./css/favicon.ico">
@@ -32,11 +9,7 @@
 <script src="./js/head.js" type="34f20bfccb00bcff8cec0b4c-text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="34f20bfccb00bcff8cec0b4c-text/javascript"></script>
 </head>
-
 <body>
-
-
-
     <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
     <video playsinline autoplay loop id="vid">
       <source src="vid.mp4" type="video/mp4"></source>
@@ -47,19 +20,16 @@
     </video>
  <div class="accounts noselect">
    <h1>GOSHI.TK</h1>
-
    <div id="clockbox" style="font-size: 20px;text-align: center;color: rgb(121,15,195);letter-spacing: 1px;text-shadow: 2px 2px #000000"></div>
    <script type="34f20bfccb00bcff8cec0b4c-text/javascript">
     var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-    
+    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];  
     function GetClock(){
     var d=new Date();
     var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
     var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
     if(nmin<=9) nmin="0"+nmin;
-    if(nsec<=9) nsec="0"+nsec;
-    
+    if(nsec<=9) nsec="0"+nsec;    
     var clocktext=""+nhour+":"+nmin+":"+nsec+"";
     document.getElementById('clockbox').innerHTML=clocktext;
     }
@@ -67,7 +37,6 @@
     GetClock();
     setInterval(GetClock,1000);
     </script>
-
     <h2>STEAM</h2>
       <a href="https://steamcommunity.com/id/pelurious" target="_blank"><img id="picture" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/cc/ccb0ddf0ca0501bc24c2f2f77d9eb970b2a64eb8_full.jpg"></a> 
       <a href="https://steamcommunity.com/id/everyonelovesyou" target="_blank"><img id="picture" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/d8/d8aab0ad80c33dca986fc2e9697edc7149055ca5_full.jpg"></a> 
@@ -79,15 +48,8 @@
       <a href="https://drifthop.net" target="_blank">drifthop.net</a>
   </div>
 </div>
-
 <img src="https://2no.co/1TyPw7.jpg"> 
 <canvas id="canvas"></canvas>
-<script src="./js/audioPlayer.js" type="34f20bfccb00bcff8cec0b4c-text/javascript"></script>
-<script type="34f20bfccb00bcff8cec0b4c-text/javascript">
-      audioPlayer();
-  </script>
-<script src="./js/main.js" type="34f20bfccb00bcff8cec0b4c-text/javascript"></script>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="34f20bfccb00bcff8cec0b4c-|49" defer=""></script>
 </body>
 </html>
 
